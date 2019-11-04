@@ -10,7 +10,7 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, span, p { font-family: 'Raleway', sans-serif; }
+h1, h2, h3, h4, h5, h6, span, p, ul, li { font-family: 'Raleway', sans-serif; }
 
 .blue { color: #6CF; }
 
@@ -25,6 +25,13 @@ h2 {
 p {
 	padding: 10px 0;
 	text-align: justify;
+}
+
+ul, li {
+	padding: 10px 0;
+	text-align: justify;
+	margin-left: 20px;
+
 }
 
 a {
@@ -113,6 +120,14 @@ blockquote p {
 	text-decoration: none;
 }
 
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
 .evidence {
     max-width: 100%;
     height: auto;
@@ -184,6 +199,12 @@ img.slide {
 }
 
 .content p {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+.content ul, li {
     font-family: 'Raleway', sans-serif;
     color: #fff;
     font-size: 16px;

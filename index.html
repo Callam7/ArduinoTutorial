@@ -93,13 +93,24 @@
                         <section id="products-section" class="inactive">
                             <div class="row">
                                 <div class="black-bg col-sm-12 col-md-12 col-lg-12">
-                                    <h2 class="text-center">Empty</h2>
+                                    <h2 class="text-center"><span class = "blue">Working Wi</span><span class = "red">th Arduino</span></h2>
                                     <div class="col-sm-12 col-md-12">
-                                         <p></p>
+                                         <p>Welcome to this neat short tutorial on building a robot. Arduino is a flexable and versatile DIY programable hardware, allowing users to create a vast array of projects.</p>
                                             <br>
-                                            <p><span class = "red"><em></em></p>
-                                                <br>
-                                        <p></p>
+                                            <p><h3><span class = "red"><em>Overall Goals</em></span></h3></p>
+                                        <p>Our main objective for this tutorial is to use Arduino hardware to create a basic distance sensing robot, as shown below:</p> 
+										<img src="images/RobotBuddy.jpg" alt="robot" width="400px" height="400px">
+										<p><br> By the end of this short course, you will be able to achieve the following objectives:
+										<br>
+										<ul>
+											<li>Connect appropriate wires to the designated ports on the board</li>
+											<li>Switch LEDS in a specific pattern</li>
+											<li>Turn DC motors on/off</li>
+											<li>Use switches to regulate power</li>
+											<li>Convert a sketch or diagram into a physical product</li>
+											<li>Use a Library in Code</li>
+										</ul> 
+										</p>
                                     </div>
                                 </div>
                             </div>
@@ -117,69 +128,55 @@
                             <div class="row">
                                 <div class="col-sm-12 col-md-12 col-lg-12">
                                     <div class="col-sm-12 col-md-12 col-lg-12 black-bg">
-                                        <h2 class = "text-center">Empty</h2>
-                                        <h3><span class = "green"> </span><span class = "red"> </span><span class = "green"> </span><span class = "red"></span></h3>
-                                        <p></p>
-
-                                                <p> 
-                            
-                                                </p>
+                                        <h2 class = "text-center"><span class = "green">Getting</span><span class = "red"> All</span><span class = "green"> Set Up</span></h2>
+                                        <p>To get started, we will need to arrange which hardware parts we will be using. In the figure below, you will see the minimum items needed to complete the overall course:</p>
+										<img src="images/tools.jpg" alt="tools" width="500px" height="500px" class="rotate90">
+										<p>From left to right:					
+											<ul>
+												<li>Connect appropriate wires to the designated ports on the board</li>
+												<li>Switch LEDS in a specific pattern</li>
+												<li>Turn DC motors on/off</li>
+												<li>Use switches to regulate power</li>
+												<li>Convert a sketch or diagram into a physical product</li>
+												<li>Use a Library in Code</li>
+											</ul> 
+										</p>
+										<p>The above items are typically available at local hardware stores, such as Jay Car or Mitre 10. However, it is easier to purchase a kit that includes all the parts needed.</p>
                                                 <br>
 
-                                        <h3><span class = "blue">blank</span></h3>
-                                        <p></p>
-
-                                            <p></p>
-
-                                            <p>
-
-                                            </p>
-
-                                            
-                                            <br>
-                                        <h3><span class = "green">Em</span> <span class = "blue"> pty</span></h3>
-                                        <p></p>
-
-                                        <p></p>
-
-                                            <p>
-                                        </p>
-
+                                        <h3><span class = "blue">Setting Up The Sketches</span></h3>
+                                        <p>Before we continue on to the next set up stage, we should get to know a couple of key terms and phrases for using the Arduino GUI software.</p>
+										<br>
+										<h4><span class = "blue">What</span><span class = "green"> Is</span><span class = "red"> A Library?</span></h4>
+										<p>
+											A library is a simple file coded in either C or C++ programming language, of which contains some extra functionality needed to run certain strings of code. They typically signal the Arduino environment to link and compile that library’s code with your sketch.
+										</p>
+										<br>
+										<h4><span class = "blue">What</span><span class = "green"> Is</span><span class = "red"> A Shield?</span></h4>
+										<img src="images/shield.jpg" alt="shield" width="300px" height="300px">
                                         <p>
-                                    </p>
+										The shield is a piece of hardware that you can mount on the Arduino to give it a specific purpose (i.e. such as the motor driver we will be using later on). Think of it as the physical version of the library.
+                                        </p>
                                         <br>
-                                        <h3><span class = "red">Time</span> <span class = "blue"> Management</span></h3>
-                                        <p></p>
-
-                                <p>
-                             
-                                    </p>
-
-                                      <p>
-                                    </p>
-
-                                    <p>
-                                    </p>
-
-                                    <p>
-                                   
-                                    </p>
-
-                                    <p>
-                       
-                                    </p>
-                                        <br>
-                                        <h3><span class = "red">Motivating </span><span class = "green">Self</span> <span class = "blue">And Others</span></h3>
+                                        <h4><span class = "green">What</span> <span class = "blue"> Are Sketches?</span></h4>
                                         <p>
-                                        </p>
-
+										They are the name specifically used to name the program the Arduino uses. It is the base code that is uploaded to an Arduino board.
+										</p>
+										<br>
+										<h4><span class = "green">What</span> <span class = "blue"> Is A "330 ohms" Resistor?</span></h4>
+										<img src="images/330ohm.jpg" alt="resistor" width="300px" height="300px">
                                         <p>
-                              
-                                        </p>
-
+										The 330ohms resistor is basically used as a “get you going” value that works on an average enough rate to power LEDS or other device tools. The purpose of this is to drop any voltage that is not required to power the LED when it is working at a satisfactory current. 
+										</p>
+										<br>
+										<h4><span class = "green">What</span> <span class = "blue"> Is An Ohm?</span></h4>
                                         <p>
-    
+										This is the unit of electrical resistance, of which transmits a current of one ampere when subjected to a potential difference of one volt. This measurement is typically used for calculating which devices require a certain amount of power to operate. For more information, see <a href="https://www.electronics-tutorials.ws/dccircuits/dcp_2.html">Ohms Law and Power.</a>
                                         </p>
+										<br>
+                                        <p>
+										For the next stage of the set up requirements, follow the two videos listed below to help you with the library set up, as well as the software set up:
+										</p>
                                         <br>
                                     </div>
                                 </div>
