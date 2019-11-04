@@ -18,6 +18,8 @@ h1, h2, h3, h4, h5, h6, span, p, ul, li { font-family: 'Raleway', sans-serif; }
 
 .red { color: orangered; }
 
+.violet { color: violet; }
+
 h2 {
 	padding: 10px 0;
 }
