@@ -182,7 +182,7 @@ img.slide {
 }
 
 .collapsible {
-  color: black;
+  color: rgba(0,0,0,0.8);
   cursor: pointer;
   padding: 18px;
   width: 100%;
