@@ -202,6 +202,7 @@
                                                 <button type="button" class="collapsible"><h3><span class = "red">Task</span> <span class = "green">One:</span> <span class = "blue">Make An LED Blink</span></h3></button>
                                                 
 												<div class="collapse">
+												<p>Let's start off with a basic LED exercise.</p>
 													<p><em>Step 1: Tools<br>
 														We will need the following to do this task:
 														<ul>
@@ -218,36 +219,91 @@
 													</p>
 													<img src="images/task1Diagram.png" alt="diagram" width="500px" height="400px">
 													<br>
-													<p>
+													<p><em>Step 3: GUI Code Setup<br>
+														For this next step, open up your Arduino GUI that you installed previously. Start a new empty code file and name it as “Blink”. 
+														Ensure that you take note of where all your code files end up, you may use them later on.</em>
 													</p>
+													<br>
+													<p><em>Step 4: Creating The Program<br>
+														After we've made the file, tyoe in <b>pinMode(yourPinHere, OUTPUT);</b> into your void setup section. The pin number will be which ever one you have used.
+														Then within the void loop section, type up the following:</em>
+													</p>
+													<img src="images/task1Code.png" alt="code" width="200px" height="200px">
+													<br>
+													<p><b>Take note of the delays. After every digital/analog write statement, there 
+													needs to be some level of delay to allow the hardware time to process in-between commands. This will stop it from short circuiting.</b>
+													Now save your file changes.
+													</p>
+													<br>
+													<p><em>Step 5: Running The Program<br>
+														Now that you have your program ready, navigate to <b>Tools->Board</b> and select the <b>Arduino/Genuino Uno board</b>, then check to ensure you have the correct port number. Once done, select the 
+														Verify button located below the navigation bar to ensure there are no errors. 
+														If you have no errors, select the <b>upload</b> button to send the commands to your Arduino device.</em>
+													</p>
+													<br>
+													<p><em>Final Step: Watch It Go!<br>
+														Now that the commands have been sent, click on the <b>serial monitor</b> button on the top right hand corner and watch the LED do its work.</em>
+													</p>
+													<img src="images/serialButton.png" alt="ser" width="226px" height="35px">
+													<br>
+													<p><em>Optional Challenge: Using the above task, try to make more than one LED blink through a cycle. Use the diagram below as a hint</em>
+													</p>
+													<img src="images/task1Bonus.png" alt="ser" width="412px" height="299px">
+													<br>
 												</div>
                                                 <br>
-                                                <h3><span class = "blue">Implemented</span> <span class = "green">Programme</span></h3>
-                                                <p>
-                                                </p>
-                                                <p>
-                            
-                                                </p>
-                                                <br>
-                                                <h3><span class = "red">Deployed</span> <span class = "blue">Dependencies</span></h3>
-                                                <p>
-                                                </p>
-                                                <p>
-                                                </p>
-                                                <br>
-                                                <h3><span class = "blue">System</span> <span class = "red">Administration</span> <span class = "blue">Provided</span></h3>
-                                                <p>
-                                                </p>
-                                                <br>
-                                                <h3><span class = "blue">Configured</span> <span class = "red">Hardware</span></h3>
-                                                <p>
-                                                </p>
-                                                <br>
-                                                <h3><span class = "red">Advanced</span> <span class = "green">Version</span> <span class = "blue">Control</span></h3>
-                                                <p></p>
-                                                         
-                                                         <p></p>
-                                                <br>
+                                                <button type="button" class="collapsible"><h3><span class = "blue">Task</span> <span class = "red">Two:</span> <span class = "green">Use A Switch To Regulate Power Cycles</span></h3></button>
+                                                
+												<div class="collapse">
+												<p>For our next exercise, we'll work with using a switch to power cyclke certain devices. In this case, we will use it to switch between two different LEDs.</p>
+													<p><em>Step 1: Tools<br>
+														We will need the following to do this task:
+														<ul>
+															<li>1 Switch</li>
+															<li>3 Black Jumper Wires</li>
+															<li>2 Red Jumper Wires</li>
+															<li>3 Other Jumper Wires(Colour Irrelevant)</li>
+															<li>2 LEDs</li>
+															<li>2 330ohm resistors</li>
+														</ul> </em>
+													</p>
+													<br>
+													<p><em>Step 2: Circuit Placement<br>
+														View the fritzing diagram below as a guide. In this guide, a Spark fun 101 board has been used.</em>
+													</p>
+													<img src="images/task2Diagram.png" alt="gram" width="400px" height="450px">
+													<br>
+													<p><em>Step 3: GUI Code Setup<br>
+														For the file, save it as “switch LEDS” within the same folder that you placed the Blink task. After that, declare your variables as follows:</em>
+													</p>
+													<img src="images/task2Code.png" alt="task" width="196px" height="64px">
+													<br>
+													<p><em>Step 4: Programming The Arduino<br>
+														Now that we have the general setup, follow along with the code snippet below and carry out the general upload process used in Task One. Once done you should have a good response time between the on LED and the off LED.</em> 
+													</p>
+													<img src="images/task2MoreCode.png" alt="Moretask" width="276px" height="350px">
+													<br>
+													<p><em>Optional Challenge: Play around with the delays between both LEDs to see if you can get different responses between the two.</em>
+													</p>
+												</div>
+												<br>
+												<button type="button" class="collapsible"><h3><span class = "red">Task</span> <span class = "green">Three:</span> <span class = "blue">Make The Wheels Turn</span></h3></button>
+                                                
+												<div class="collapse">
+												<p>Now that you are familiar with uploading code as well as checking for errors by using the verify button, we can now move on to more complex scenarios. For the next task, we will focus on using the DC motors.</p>
+													<p><em>Step 1: Tools<br>
+														We will need the following to do this task:
+														<ul>
+															<li>1 Switch</li>
+															<li>3 Black Jumper Wires</li>
+															<li>2 Red Jumper Wires</li>
+															<li>3 Other Jumper Wires(Colour Irrelevant)</li>
+															<li>2 LEDs</li>
+															<li>2 330ohm resistors</li>
+														</ul> </em>
+													</p>
+													<br>
+												</div>
                                         </div>
                                     </div>
                                 </div>
