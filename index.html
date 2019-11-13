@@ -133,15 +133,20 @@
 										<img src="images/tools.jpg" alt="tools" width="500px" height="500px" class="rotate90">
 										<p>From left to right:					
 											<ul>
-												<li>Connect appropriate wires to the designated ports on the board</li>
-												<li>Switch LEDS in a specific pattern</li>
-												<li>Turn DC motors on/off</li>
-												<li>Use switches to regulate power</li>
-												<li>Convert a sketch or diagram into a physical product</li>
-												<li>Use a Library in Code</li>
+												<li>Motor Driver</li>
+												<li>Distance Sensor</li>
+												<li>1-4 LEDs</li>
+												<li>1-3 330Ohm Resistors</li>
+												<li>1 Switch</li>
+												<li>1 4 Slot Battery Pack + 4 AA Batteries</li>
+												<li>20-25 Jumper Wires</li>
+												<li>1 Micro USB Cable</li>
+												<li>2 Wheels</li>
+												<li>1 Base Board with Breadboard and Spark Fun Red Board</li>
+												<li>2 Binder Clips</li>
 											</ul> 
 										</p>
-										<p>The above items are typically available at local hardware stores, such as Jay Car or Mitre 10. However, it is easier to purchase a kit that includes all the parts needed.</p>
+										<p>The above items are typically available at local hardware stores, such as Jay Car or Mitre 10. However, it is easier to purchase a kit that includes all the parts needed. They are needed for the final product, not all items are needed for the exercises. </p>
                                                 <br>
 
                                         <h3><span class = "blue">Setting Up The Sketches</span></h3>
@@ -175,8 +180,35 @@
                                         </p>
 										<br>
                                         <p>
-										For the next stage of the set up requirements, follow the two videos listed below to help you with the library set up, as well as the software set up:
+										For the next stage of the set up requirements, follow along with the steps in order to install the required software:
 										</p>
+										<button type="button" class="collapsible"><h3><span class = "red">Software Set Up</span></h3></button>
+										<div class="collapse">
+										<p><em>Step 1: Download The Installer<br>
+											Navigate to the <a href = "https://www.arduino.cc/en/Main/Software">download page</a> and download the latest version of Arduino IDE.</em>
+										</p>
+										<br>
+										<p><em>Step 2: Running The Installation<br>
+											Once that has downloaded, run the installer and you will come across a warning. This simply means that you need to confirm that this program is allowed to be on your device, and is allowed to install the necessary drivers.
+											After the warning, the installation process will take you here:
+											<br>
+											<img src="images/install1.png" alt="insta1" width="400px" height="300px">
+											<br>
+											Select all components that you wish to have installed (for the task we will be doing, you'll need all of them). </em>
+										</p>
+										<br>
+										<p><em>Step 3: Directory<br>
+											Next select where you would like to store the Arduino program files:</em>
+											<br>
+											<img src="images/install2.png" alt="insta2" width="400px" height="300px">
+										</p>
+										<br>
+										<p><em>Step 4: Library Download<br>
+											Now that we have installed the Arduino IDE program, we now need to download the library we will be using. Navigate to the following <a href = "https://www.sparkfun.com/sikcode">link</a> and select <b>SIK V4.1 CODE</b>.
+											Once downloaded, extract the folder to your Arduino folder location that you've chosen (for example, I used my Documents folder). Once done, you should be able to see <b>SIK-Guide-Code-Master</b> under <b>File->Sketchbook</b>.</em>
+										</p>
+										</div>
+										<br>
                                         <br>
                                     </div>
                                 </div>
@@ -244,7 +276,7 @@
 													<p><em>Final Step: Watch It Go!<br>
 														Now that the commands have been sent, click on the <b>serial monitor</b> button on the top right hand corner and watch the LED do its work.</em>
 													</p>
-													<img src="images/serialButton.png" alt="serialButton" width="226px" height="35px">
+													<img src="images/serialButton.PNG" alt="serialButton" width="226px" height="35px">
 													<br>
 													<p><em>Optional Challenge: Using the above task, try to make more than one LED blink through a cycle. Use the diagram below as a hint</em>
 													</p>
@@ -310,11 +342,38 @@
 													<p><em> Step 2: Circuit Layout<br>
 														Using the fritzing diagram below, set up the circuit board:
 													</p>
-													<img src="images/task3Diagram.png" alt="leds" width="500px" height="400px">
+													<img src="images/task3Diagram.PNG" alt="leds" width="500px" height="400px">
 													<br>
 													<p><em>Step 3: Coding The Program<br>
-														
+														In order to properly code this part, we will need to use the library that we imported from the beginning. From the navigation bar, select <b>File->Sketchbook->SIK-Code-Master-Guide</b> and then select the <b>DistanceSensor</b> example sketch.
+														This way, we won't need 15+ steps just for the code!</em>
 													</p>
+													<br>
+													<p><em>Step 4: Upload Code<br>
+														Now we simply verify and upload the code.</em>
+													</p>
+													<br>
+												</div>
+												<br>
+												<br>
+												<br>
+												<button type="button" class="collapsible"><h3><span class = "red">Task</span> <span class = "green">Four:</span> <span class = "blue">Control The Motors</span></h3></button>
+                                                
+												<div class="collapse">
+												<p></p>
+													<p><em>Step 1: Tools<br>
+														We will need the following to do this task:
+														<ul>
+															<li>3 Black Jumper Wires</li>
+															<li>3 Red Jumper Wires</li>
+															<li>4 Other Jumper Wires(Colour Irrelevant)</li>
+															<li>1 Distance Sensor</li>
+															<li>3 330Ohm Resistor</li>
+															<li>1 RGB LED</li>
+														</ul> </em>
+													</p>
+													<br>
+													<br>
 												</div>
 												<br>
 												<br>
