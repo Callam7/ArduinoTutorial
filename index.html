@@ -296,7 +296,7 @@
 															<li>1 Switch</li>
 															<li>3 Black Jumper Wires</li>
 															<li>2 Red Jumper Wires</li>
-															<li>3 Other Jumper Wires(Colour Irrelevant)</li>
+															<li>3 Multi-Colored Jumper Wires</li>
 															<li>2 LEDs</li>
 															<li>2 330ohm resistors</li>
 														</ul> </em>
@@ -326,13 +326,15 @@
 												<button type="button" class="collapsible"><h3><span class = "red">Task</span> <span class = "green">Three:</span> <span class = "blue">Working With Distance Sensor Functionality</span></h3></button>
                                                 
 												<div class="collapse">
-												<p>Now that you are familiar with uploading code as well as checking for errors by using the verify button, we can now move on to more complex scenarios. For the next task, we will focus on using the Distance Sensor. <b>Note: The RGB LED is not essential, this can be done with a single LED</b></p>
+												<p>Now that you are familiar with uploading code as well as checking for errors by using the verify button, we can now move on to more complex scenarios. For the next task, we will focus on using the Distance Sensor. 
+												Note thate from this point, we'll rely on the library sketchbook we downloaded for the code as things get more complex from here.
+												</p>
 													<p><em>Step 1: Tools<br>
 														We will need the following to do this task:
 														<ul>
 															<li>3 Black Jumper Wires</li>
 															<li>3 Red Jumper Wires</li>
-															<li>4 Other Jumper Wires(Colour Irrelevant)</li>
+															<li>4 Multi-Colored Jumper Wires</li>
 															<li>1 Distance Sensor</li>
 															<li>3 330Ohm Resistor</li>
 															<li>1 RGB LED</li>
@@ -340,7 +342,7 @@
 													</p>
 													<br>
 													<p><em> Step 2: Circuit Layout<br>
-														Using the fritzing diagram below, set up the circuit board:
+														Using the fritzing diagram below, set up the circuit board:</em>
 													</p>
 													<img src="images/task3Diagram.PNG" alt="leds" width="500px" height="400px">
 													<br>
@@ -357,22 +359,38 @@
 												<br>
 												<br>
 												<br>
-												<button type="button" class="collapsible"><h3><span class = "red">Task</span> <span class = "green">Four:</span> <span class = "blue">Control The Motors</span></h3></button>
+												<button type="button" class="collapsible"><h3><span class = "red">Task</span> <span class = "green">Four:</span> <span class = "blue">Controling The Motors</span></h3></button>
                                                 
 												<div class="collapse">
-												<p></p>
+												<p>This task will require quite a bit of detail to both the code and the wire placement. </p>
 													<p><em>Step 1: Tools<br>
 														We will need the following to do this task:
 														<ul>
-															<li>3 Black Jumper Wires</li>
-															<li>3 Red Jumper Wires</li>
-															<li>4 Other Jumper Wires(Colour Irrelevant)</li>
-															<li>1 Distance Sensor</li>
-															<li>3 330Ohm Resistor</li>
-															<li>1 RGB LED</li>
+															<li>1 Motor Driver</li>
+															<li>1 DC Gear Motor</li>
+															<li>1 Switch</li>
+															<li>5 Red Jumper Wires</li>
+															<li>4 Black Jumper Wires</li>
+															<li>7 Multi-Colored Jumper Wires</li>
 														</ul> </em>
 													</p>
 													<br>
+													<p><em>Step 2: Circuit Placement<br>
+														Use the fritzing diagram below as a guide for the circuit placement:</em>
+													</p>
+													<img src="images/task4Diagram.PNG" alt="task4" width="650px" height="580px">
+													<br>
+													<p><em>Step 3: Coding The Program<br>
+														For the next step, navigate to <b>File->Sketchbook->SIK-Code-Master-Guide</b> and select Motor Basics. Take note of the code below:</em>
+													</p>
+													<img src="images/task4Code.PNG" alt="task4Code" width="301px" height="340px">
+													<br>
+													<p><em>This is known as a <b>Function</b> that will do extra mechanics that we can't place in the void setup or void loop snippets. This is so the coee is set up in a readable mannor and does not run the risk of 
+													overloading a section of the program, or worse, short-circuit the Arduino.</em></p>
+													<br>
+													<p><em>Step 4: Run The Program<br>
+														Once you have established the code via verifying it and uploading it to the Arduino, try altering the speed variables and directions to see how the motor responds to what you have entered.</em>
+													</p>
 													<br>
 												</div>
 												<br>
@@ -428,9 +446,41 @@
                         <section id="testimonials-section" class="inactive">
                             <div class="row">
                                 <div class="black-bg col-sm-12 col-md-12 col-lg-12">
-                                    <h2 class="text-center">meh</h2>
+                                    <h2 class="text-center">Final Product</h2>
                                     <div class="col-sm-12 col-md-12">
-                                        <p></p>
+                                        <p>Now that you have a grasp on the general basics around the Arduino and its tools, we can apply that knowledge to building the robot buddy.</p>
+										<br>
+										<p><em>Step 1: Tools<br>
+											We will need the following:
+											<ul>
+												<li>1 Motor Driver</li>
+												<li>2 DC Gear Motors</li>
+												<li>1 Switch</li>
+												<li>6 Red Jumper Wires</li>
+												<li>5 Black Jumper Wires</li>
+												<li>9 Multi-Colored Jumper Wires</li>
+												<li>2 Wheels</li>
+												<li>1 Binder Clip</li>
+												<li>Dual Lock Tape</li>
+												<li>1 Distance Sensor</li>
+												<li>4 AA Batteries</li>
+												<li>1 4-Slot Battery Holder</li>
+											</ul></em>
+										</p>
+										<br>
+										<p><em>Step 2: Circuit Placement<br>
+											Use the diagram below as a guide for the placement. <b>Hint: Refer to the previous tasks as a guide as well.</b>
+											</em>
+										</p>
+										<img src="images/finalTaskDiagram.PNG" alt="final" width="800px" height="590px">
+										<br>
+										<p><em>Step 3: Dual Lock Tape Placement<br>
+											Next for the set up, cut the dual lock tape so it fits precisely under each motor:
+											<insert here>
+											Then repeat this for the board and the battery holder. Be sure to place them so that the battery holder and the two motors will lock into place underneath the board:</em>
+										</p>
+										<br>
+										<p><em>Step 4: Coding The Program<br>
                                             
                                     </div>
                                 </div>
